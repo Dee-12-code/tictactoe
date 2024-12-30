@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Dee's game</h1>
+    <div id="welcomeMessage">
+      <p>Welcome to Dee's Tic-Tac-Toe game! Enter your names to start playing.</p>
+    </div>
+    <div id="playerNames">
+      <input type="text" id="player1" placeholder="Enter Player 1 Name" required>
+      <input type="text" id="player2" placeholder="Enter Player 2 Name" required>
+      <button id="startGame">Start Game</button>
+    </div>
+    <div id="gameBoard" style="display: none;">
+      <div id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <h2 id="statusText"></h2>
+      <button id="restartButton" style="display: none;">Restart Game</button>
+    </div>
+  </div>
+  <!-- Pop-up for winner announcement -->
+  <div id="winnerPopup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span id="winnerMessage"></span>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
